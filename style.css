@@ -98,6 +98,8 @@ nav .right a span{
 .hero .headshot img{
     border-radius: 50%;
     width: 380px;
+    height: 380px;
+    object-fit: cover;
 }
 @media(max-width:850px){
     /* SECTION 1 HERO */
