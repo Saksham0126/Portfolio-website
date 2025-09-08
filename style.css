@@ -89,9 +89,10 @@ nav .right a span{
     border:2px solid var(--text-color);
 }
 .hero .headshot{
+    
+    flex:2;
     display: flex;
     justify-content: right;
-    flex:2;
 
 }
 .hero .headshot img{
@@ -106,9 +107,17 @@ nav .right a span{
 }
 @media(max-width:740px){
     /* SECTION 1 HERO */
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
     .hero .text{
         flex-direction: column-reverse;
-        
+
+    }
+    .hero .text img{
+        width:300px;
     }
 }
 
