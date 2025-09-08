@@ -1,0 +1,132 @@
+:root{
+    --text-color:#1A181B;
+    --link-color:#750D37;
+    --background-color: #FFFBFA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background-color:var(--background-color);
+}
+
+a{
+    color:var(--link-color);
+    text-decoration:none;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 82px;
+}
+
+nav .left a{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+nav .right a{
+    margin:0 10px;
+    
+}
+
+nav .right a:last-child{
+    color:var(--background-color);
+    background-color: var(--link-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span{
+    margin-left: 5px;
+    
+}
+/* SECTION 1:HERO */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    margin:50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+
+}
+.hero .text{
+    flex:5;
+
+}
+.hero .text h2{
+    font-size: 45px;
+}
+
+.hero .text .links{
+    margin-top: 25px;
+}
+.hero .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.hero .text .links a:hover{
+    color:var(--text-color);
+    border:2px solid var(--text-color);
+}
+.hero .headshot{
+    display: flex;
+    justify-content: right;
+    flex:2;
+
+}
+.hero .headshot img{
+    border-radius: 50%;
+    width: 380px;
+}
+@media(max-width:850px){
+    /* SECTION 1 HERO */
+    .hero .text h2{
+        font-size: 35;
+    }
+}
+@media(max-width:740px){
+    /* SECTION 1 HERO */
+    .hero .text{
+        flex-direction: column-reverse;
+        
+    }
+}
+
+@media(max-width:600px){
+    /* NAVBAR */
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 20px;
+    }
+    nav .right a:last-child{
+        color:var(--link-color);
+        background-color: var(--background-color);
+        padding: 0;
+    }
+    nav .right a span{
+        display:none;
+
+    }
+}
