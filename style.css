@@ -53,6 +53,17 @@ nav .right a span{
     margin-left: 5px;
     
 }
+/* Skills */
+.skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills h2{
+ 
+   text-align: center;
+   font-size: 35;;
+}
+
 /* SECTION 1:HERO */
 .hero{
     display: flex;
@@ -97,8 +108,8 @@ nav .right a span{
 }
 .hero .headshot img{
     border-radius: 50%;
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 @media(max-width:850px){
@@ -139,5 +150,13 @@ nav .right a span{
     nav .right a span{
         display:none;
 
+    }
+
+    /* HERO */
+    .hero{
+        padding:0 20px;
+    }
+    .hero .text h2{
+        font-size: 30px;
     }
 }
